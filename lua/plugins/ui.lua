@@ -8,14 +8,16 @@ return {
     },
   },
 
-  -- add custom colorscheme
+  -- add custom colorschemes
   { "sainnhe/sonokai" },
+  { "ellisonleao/gruvbox.nvim" },
+  { "projekt0n/github-nvim-theme" },
 
   -- configure LazyVim to load it
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "sonokai",
+      colorscheme = "github_dark",
     },
   },
 }
