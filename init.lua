@@ -1,2 +1,23 @@
+-- [
+--   _____ ___  ____   ___
+--  |_   _/ _ \|  _ \ / _ \
+--    | || | | | | | | | | |
+--    | || |_| | |_| | |_| |
+--    |_| \___/|____/ \___/
+--
+--  * Add keymap for :FzfLua builtin
+--  * Add keymap for :FzfLua (l)grep_quickfix
+--  * Add keymap for :FzfLua (l)grep_loclist
+--  * Add keymap for loclist next
+--  * Make trouble default for quickfix and loclist
+--    * Focus quickfix and loclist when opening it
+--  * How to shorten file path in bottom bar
+--  * Starting a test run should open summary
+--  * A finished test run shouldn't close the loclist
+--  * Neotest shows test result in gutter and as virtual text
+--  * Searching next should center line
+--
+-- ]
+
 -- bootstrap lazy.nvim, LazyVim and your plugins
 require("config.lazy")
