@@ -8,6 +8,7 @@ return {
       config.defaults.actions.files["alt-t"] = actions.open
     end,
     keys = {
+      { "<leader>sf", "<cmd>FzfLua builtin<cr>", desc = "Fzf builtin" },
       { "<leader>fl", "<cmd>FzfLua loclist<cr>", desc = "Location List" },
       { "<leader>fq", "<cmd>FzfLua quickfix<cr>", desc = "Quickfix List" },
       { "<leader>sl", "<cmd>FzfLua grep_loclist<cr>", desc = "Location List" },

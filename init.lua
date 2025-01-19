@@ -5,7 +5,6 @@
 --    | || |_| | |_| | |_| |
 --    |_| \___/|____/ \___/
 --
---  * Add keymap for :FzfLua builtin
 --  * Add keymap for loclist next
 --  * Make trouble default for quickfix and loclist
 --  * Starting a test run should open summary
