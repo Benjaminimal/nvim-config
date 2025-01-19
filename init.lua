@@ -9,7 +9,6 @@
 --  * Starting a test run should open summary
 --  * A finished test run shouldn't close the loclist
 --  * Neotest shows test result in gutter and as virtual text
---  * Areal should be right
 --
 -- ]
 
