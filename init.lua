@@ -10,11 +10,10 @@
 --  * Add keymap for :FzfLua (l)grep_loclist
 --  * Add keymap for loclist next
 --  * Make trouble default for quickfix and loclist
---    * Focus quickfix and loclist when opening it
---  * How to shorten file path in bottom bar
 --  * Starting a test run should open summary
 --  * A finished test run shouldn't close the loclist
 --  * Neotest shows test result in gutter and as virtual text
+--  * Areal should be right
 --
 -- ]
 

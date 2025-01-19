@@ -1,3 +1,59 @@
 return {
   { "folke/flash.nvim", enabled = false },
+  {
+    "ibhagwan/fzf-lua",
+    opts = function()
+      local config = require("fzf-lua.config")
+      local actions = require("trouble.sources.fzf").actions
+      config.defaults.actions.files["alt-t"] = actions.open
+    end,
+  },
+  {
+    "folke/trouble.nvim",
+    -- TODO: this cuases an error
+    -- opts = function()
+    --   -- alyways use toruble for opening quickfix and loclist
+    --   -- See https://github.com/folke/trouble.nvim/issues/428
+    --   vim.api.nvim_create_autocmd("BufRead", {
+    --     callback = function(ev)
+    --       if vim.bo[ev.buf].buftype == "quickfix" then
+    --         local is_loclist = vim.fn.getwininfo(vim.fn.win_getid())[0]["loclist"] == 1
+    --         if is_loclist then
+    --           vim.schedule(function()
+    --             vim.cmd([[lclose]])
+    --             vim.cmd([[Trouble loclist open]])
+    --           end)
+    --         else
+    --           vim.schedule(function()
+    --             vim.cmd([[cclose]])
+    --             vim.cmd([[Trouble qflist open]])
+    --           end)
+    --         end
+    --       end
+    --     end,
+    --   })
+    -- end,
+    keys = {
+      {
+        "<leader>xl",
+        "<cmd>Trouble loclist toggle focus=true<cr>",
+        desc = "Location List (Trouble)",
+      },
+      {
+        "<leader>xq",
+        "<cmd>Trouble qflist toggle focus=true<cr>",
+        desc = "Quickfix List (Trouble)",
+      },
+      {
+        "<leader>xL",
+        "<cmd>lopen<cr>",
+        desc = "Location List",
+      },
+      {
+        "<leader>xQ",
+        "<cmd>copen<cr>",
+        desc = "Quickfix List",
+      },
+    },
+  },
 }
