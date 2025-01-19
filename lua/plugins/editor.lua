@@ -7,6 +7,12 @@ return {
       local actions = require("trouble.sources.fzf").actions
       config.defaults.actions.files["alt-t"] = actions.open
     end,
+    keys = {
+      { "<leader>fl", "<cmd>FzfLua loclist<cr>", desc = "Location List" },
+      { "<leader>fq", "<cmd>FzfLua quickfix<cr>", desc = "Quickfix List" },
+      { "<leader>sl", "<cmd>FzfLua grep_loclist<cr>", desc = "Location List" },
+      { "<leader>sq", "<cmd>FzfLua grep_quickfix<cr>", desc = "Quickfix List" },
+    },
   },
   {
     "folke/trouble.nvim",
