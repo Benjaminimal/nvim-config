@@ -5,15 +5,15 @@ return {
     opts = {
       ---@type lspconfig.options
       servers = {
-        -- pyright will be automatically installed with mason and loaded with lspconfig
         basedpyright = {
           settings = {
             basedpyright = {
-              disableOrganizeImports = true, -- deletgate to ruff
+              disableOrganizeImports = true, -- delegate to ruff
               analysis = {
-                typeCheckingMode = "basic",
+                -- typeCheckingMode = "strict",
                 -- NOTE: uncomment this to ignore linting. Good for projects where
                 -- basedpyright lights up as a christmas tree.
+                typeCheckingMode = "basic",
                 ignore = { "*" },
                 autoSearchPaths = true,
                 useLibraryCodeForTypes = true,
