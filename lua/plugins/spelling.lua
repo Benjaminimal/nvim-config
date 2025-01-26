@@ -1,0 +1,59 @@
+return {
+  {
+    "neovim/nvim-lspconfig",
+    ---@class PluginLspOpts
+    opts = {
+      ---@type lspconfig.options
+      servers = {
+        harper_ls = {
+          settings = {
+            ["harper-ls"] = {
+              linters = {
+                spelled_numbers = false,
+                an_a = true,
+                sentence_capitalization = true,
+                unclosed_quotes = true,
+                wrong_quotes = false,
+                long_sentences = true,
+                repeated_words = true,
+                spaces = true,
+                matcher = true,
+                correct_number_suffix = true,
+                number_suffix_capitalization = true,
+                multiple_sequential_pronouns = true,
+                linking_verbs = false,
+                avoid_curses = true,
+                terminating_conjunctions = true,
+                ellipsis_length = true,
+                dot_initialisms = true,
+                boring_words = false,
+                use_genitive = false,
+                that_which = true,
+                capitalize_personal_pronouns = true,
+                americas = true,
+                koreas = true,
+                chinese_communist_party = true,
+                united_organizations = true,
+                holidays = true,
+                amazon_names = true,
+                google_names = true,
+                meta_names = true,
+                microsoft_names = true,
+                apple_names = true,
+                azure_names = true,
+                merge_words = true,
+                plural_conjugate = false,
+                oxford_comma = true,
+                pronoun_contraction = true,
+                currency_placement = true,
+                somewhat_something = true,
+                lets_confusion = true,
+                spell_check = true,
+              },
+            },
+          },
+        },
+      },
+    },
+  },
+}
