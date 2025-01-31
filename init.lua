@@ -7,6 +7,8 @@
 --
 --  * Make trouble default for quickfix and loclist
 --  * A finished test run shouldn't close the loclist
+--  * Cant close summary window with q
+--  * don't know how to save files after renaming
 --
 -- ]
 
