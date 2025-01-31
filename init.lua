@@ -10,6 +10,9 @@
 --  * Cant close summary window with q
 --  * don't know how to save files after renaming
 --  * copilot chat history?
+--  * look into this coloscheme https://github.com/rebelot/kanagawa.nvim
+--  * sort search (workspace) symbols results by length/match
+--  * use mini for surround
 --
 --      Old text                    Command         New text
 -- --------------------------------------------------------------------------------
