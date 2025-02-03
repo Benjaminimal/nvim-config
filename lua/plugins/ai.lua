@@ -1,6 +1,7 @@
 return {
   {
     "CopilotC-Nvim/CopilotChat.nvim",
+    verion = "*",
     keys = {
       -- Ask the Perplexity agent a quick question
       {
