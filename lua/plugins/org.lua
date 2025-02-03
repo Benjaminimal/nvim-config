@@ -127,14 +127,15 @@ return {
       },
       -- Inserts a link at the cursor location or around the selected text
       -- TODO: take a look at integrating completion
-      {
-        "<C-i>",
-        function()
-          require("zk.commands").get("ZkInsertLink")()
-        end,
-        mode = "i",
-        desc = "Insert Link to Note",
-      },
+      -- TODO: looks like this breaks pressing <TAB> in insert mode
+      -- {
+      --   "<C-i>",
+      --   function()
+      --     require("zk.commands").get("ZkInsertLink")()
+      --   end,
+      --   mode = "i",
+      --   desc = "Insert Link to Note",
+      -- },
       {
         "<leader>zi",
         ":'<,'>ZkInsertLinkAtSelection<CR>",
