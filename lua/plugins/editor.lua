@@ -75,4 +75,16 @@ return {
       },
     },
   },
+  {
+    "folke/which-key.nvim",
+    opts = {
+      spec = {
+        {
+          mode = { "n", "v" },
+          { "<leader>z", group = "notes", icon = { icon = " ", color = "white" } },
+          { "<leader>i", group = "chat", icon = { icon = "󰭹 ", color = "green" } },
+        },
+      },
+    },
+  },
 }

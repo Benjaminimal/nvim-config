@@ -44,7 +44,6 @@ return {
         },
       })
     end,
-    -- TODO: add descriptions & a which key root description
     keys = {
       -- Open notes.
       {
