@@ -47,15 +47,23 @@ return {
     keys = {
       -- Open notes.
       {
-        "<leader>zz",
+        "<leader>fz",
         function()
           require("zk.commands").get("ZkNotes")({ sort = { "modified" } })
         end,
-        desc = "Open Notes",
+        desc = "Notes",
+      },
+      -- Open notes associated with the selected tags.
+      {
+        "<leader>sz",
+        function()
+          require("zk.commands").get("ZkTags")()
+        end,
+        desc = "Tags in Notes",
       },
       -- Create a new note after asking for its title.
       {
-        "<leader>zn",
+        "<leader>zz",
         function()
           require("zk.commands").get("ZkNew")({ title = vim.fn.input("Title: ") })
         end,
@@ -63,14 +71,14 @@ return {
       },
       -- Create a new note with title as the current visual selection.
       {
-        "<leader>zn",
+        "<leader>zz",
         ":'<,'>ZkNewFromTitleSelection<CR>",
         mode = "v",
         desc = "New Note with Selection as Title",
       },
       -- Create a new note with content as the current visual selection.
       {
-        "<leader>zc",
+        "<leader>zv",
         ":'<,'>ZkNewFromContentSelection<CR>",
         mode = "v",
         desc = "New Note with Selection as Content",
@@ -82,14 +90,6 @@ return {
           require("zk.commands").get("ZkNew")({ group = "journal-weekly", extra = get_current_work_week_days() })
         end,
         desc = "Weekly Note",
-      },
-      -- Open notes associated with the selected tags.
-      {
-        "<leader>zt",
-        function()
-          require("zk.commands").get("ZkTags")()
-        end,
-        desc = "Search Tags in Notes",
       },
       -- Opens a notes picker for the backlinks of the current buffer
       {
