@@ -7,13 +7,12 @@
 --
 --  * Make trouble default for quickfix and loclist
 --  * A finished test run shouldn't close the loclist
---  * Cant close summary window with q
+--  * Cant close test summary window with q
 --  * don't know how to save files after renaming
---  * copilot chat history?
---  * look into this coloscheme https://github.com/rebelot/kanagawa.nvim
 --  * sort search (workspace) symbols results by length/match
 --  * keymap for evaluating arithmetic expressions in insert mode
 --  * neovim adds line breaks automatically leading to broken python syntax
+--  * python autopairs is suboptimal
 --
 -- ]
 
