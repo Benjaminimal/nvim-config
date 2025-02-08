@@ -11,7 +11,6 @@
 --  * don't know how to save files after renaming
 --  * sort search (workspace) symbols results by length/match
 --  * keymap for evaluating arithmetic expressions in insert mode
---  * neovim adds line breaks automatically leading to broken python syntax
 --
 -- ]
 
