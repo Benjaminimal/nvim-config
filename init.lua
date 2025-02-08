@@ -12,7 +12,6 @@
 --  * sort search (workspace) symbols results by length/match
 --  * keymap for evaluating arithmetic expressions in insert mode
 --  * neovim adds line breaks automatically leading to broken python syntax
---  * python autopairs is suboptimal
 --
 -- ]
 
