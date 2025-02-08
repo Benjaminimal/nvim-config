@@ -4,7 +4,6 @@ return {
     ---@type snacks.Config
     opts = {
       -- disable smooth scrolling
-      indent = { enabled = false },
       scroll = { enabled = false },
     },
   },
