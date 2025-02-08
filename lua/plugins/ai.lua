@@ -3,6 +3,24 @@ return {
     "CopilotC-Nvim/CopilotChat.nvim",
     version = "*",
     keys = {
+      -- Load existing chat
+      {
+        "<leader>al",
+        ":CopilotChatLoad ",
+        desc = "CopilotChat - Load Chat",
+      },
+      -- Store current chat
+      {
+        "<leader>as",
+        function()
+          local input = vim.fn.input("Save Chat: ")
+          if input ~= "" then
+            require("CopilotChat").save(input)
+          end
+        end,
+        ft = "copilot-chat",
+        desc = "CopilotChat - Save Chat",
+      },
       -- Ask the Perplexity agent a quick question
       {
         "<leader>as",
