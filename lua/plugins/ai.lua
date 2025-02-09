@@ -23,6 +23,9 @@ return {
     ---@type CopilotChat.config
     opts = {
       prompts = {
+        Reuse = {
+          prompt = "Is there a built-in function or library in this language/framework that accomplishes this task?",
+        },
         LearnTypeScript = {
           prompt = "Act as a typescipt tutor.",
           system_prompt = code_tutor_prompt,
