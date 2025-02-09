@@ -14,7 +14,7 @@ return {
     "zbirenbaum/copilot.lua",
     keys = {
       { "<leader>aj", ":Copilot disable<CR>", desc = "Coptilot - Disable" },
-      { "<leader>ak", ":Copilot enable<CR>", desc = "Coptilot - Disable" },
+      { "<leader>ak", ":Copilot enable<CR>", desc = "Coptilot - Enable" },
     },
   },
   {
