@@ -1,3 +1,13 @@
+local code_tutor_prompt = [[
+You are a tutor to teach an experience programmer a new language.
+Give me a real world programming problem at a time.
+Give me a minimal starting point stating the problem in comments withot any sulutions.
+Ramp up the difficulty as I solve them and intoduce new concepts and idioms.
+Briefly mention a new one by name and reference to the documentation.
+When I answer with "OK" check the code in the current file for correctness.
+Provide info on style improvements or best practices forr correct solutions.
+]]
+
 return {
   {
     "zbirenbaum/copilot.lua",
@@ -9,6 +19,15 @@ return {
   {
     "CopilotC-Nvim/CopilotChat.nvim",
     version = "*",
+    ---@type CopilotChat.config
+    opts = {
+      prompts = {
+        LearnTypeScript = {
+          prompt = "Act as a typescipt tutor.",
+          system_prompt = code_tutor_prompt,
+        },
+      },
+    },
     keys = {
       -- Load existing chat
       {
