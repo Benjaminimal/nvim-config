@@ -10,8 +10,16 @@ return {
 
   -- add custom colorschemes
   { "sainnhe/sonokai" },
-  { "ellisonleao/gruvbox.nvim" },
+  { "sainnhe/gruvbox-material" },
   { "projekt0n/github-nvim-theme" },
+  { "olimorris/onedarkpro.nvim" },
+  { "Mofiqul/vscode.nvim" },
+  { "scottmckendry/cyberdream.nvim" },
+  { "briones-gabriel/darcula-solid.nvim" },
+  { "rose-pine/neovim" },
+  { "craftzdog/solarized-osaka.nvim" },
+  { "sainnhe/edge" },
+  { "navarasu/onedark.nvim" },
 
   -- configure LazyVim to load it
   {
