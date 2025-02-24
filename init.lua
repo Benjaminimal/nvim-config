@@ -10,8 +10,8 @@
 --  * Cant close test summary window with q
 --  * don't know how to save files after renaming
 --  * sort search (workspace) symbols results by length/match
---  * keymap for evaluating arithmetic expressions in insert mode
 --  * in python sometimes comments wont shift indent in visual mode
+--  * yank history on fzf (or similar)
 --
 -- ]
 
