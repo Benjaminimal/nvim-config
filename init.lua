@@ -12,6 +12,9 @@
 --  * sort search (workspace) symbols results by length/match
 --  * in python sometimes comments wont shift indent in visual mode
 --  * yank history on fzf (or similar)
+--  * inline glob for live grep
+--    https://github.com/LazyVim/LazyVim/discussions/5174
+--    https://github.com/ibhagwan/fzf-lua/issues/167
 --
 -- ]
 
