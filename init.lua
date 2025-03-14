@@ -15,6 +15,8 @@
 --  * inline glob for live grep
 --    https://github.com/LazyVim/LazyVim/discussions/5174
 --    https://github.com/ibhagwan/fzf-lua/issues/167
+--  * look into neoconf
+--    https://github.com/folke/neoconf.nvim
 --
 -- ]
 
