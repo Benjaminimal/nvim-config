@@ -38,9 +38,23 @@ return {
       opts.sources = opts.sources or {}
       vim.list_extend(opts.sources, {
         null_ls.builtins.diagnostics.mypy.with({
-          extra_args = function()
-            local virtual = os.getenv("VIRTUAL_ENV") or os.getenv("CONDA_PREFIX") or "/usr"
-            return { "--python-executable", virtual .. "/bin/python" }
+          -- none-ls passes the file directly to mypy
+          -- that way the configured ignores are bypassed
+          -- we need to filter ourselves
+          runtime_condition = function()
+            local ignore_patterns = {
+              "tests/",
+              "migrations/",
+              "__pycache__/",
+              ".venv/",
+            }
+            local filepath = vim.api.nvim_buf_get_name(0)
+            for _, pattern in ipairs(ignore_patterns) do
+              if filepath:match(pattern) then
+                return false
+              end
+            end
+            return true
           end,
         }),
       })
