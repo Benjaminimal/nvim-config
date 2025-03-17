@@ -12,6 +12,15 @@ Provide info on style improvements or best practices only if you can find grave 
 return {
   {
     "zbirenbaum/copilot.lua",
+    opts = {
+      suggestion = {
+        keymap = {
+          accept = "<M-CR>",
+          next = "<M-]>",
+          prev = "<M-[>",
+        },
+      },
+    },
     keys = {
       { "<leader>aj", ":Copilot disable<CR>", desc = "Coptilot - Disable" },
       { "<leader>ak", ":Copilot enable<CR>", desc = "Coptilot - Enable" },
