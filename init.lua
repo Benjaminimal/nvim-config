@@ -17,6 +17,8 @@
 --    https://github.com/ibhagwan/fzf-lua/issues/167
 --  * look into neoconf
 --    https://github.com/folke/neoconf.nvim
+--  * make moving stuff around easier
+--    https://github.com/alexpasmantier/pymple.nvim
 --
 -- ]
 
