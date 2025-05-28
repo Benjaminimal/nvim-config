@@ -2,7 +2,7 @@
 function summaryOpen(keymap_rhs)
   return function()
     keymap_rhs()
-    require("neotest").summary.open()
+    -- require("neotest").summary.open()
   end
 end
 
