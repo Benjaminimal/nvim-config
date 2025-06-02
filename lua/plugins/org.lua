@@ -32,6 +32,7 @@ return {
           config = {
             cmd = { "zk", "lsp" },
             name = "zk",
+            filetypes = { "markdown" },
             -- on_attach = ...
             -- etc, see `:h vim.lsp.start_client()`
           },
@@ -39,7 +40,6 @@ return {
           -- automatically attach buffers in a zk notebook that match the given filetypes
           auto_attach = {
             enabled = true,
-            filetypes = { "markdown" },
           },
         },
       })
