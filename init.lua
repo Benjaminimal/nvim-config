@@ -7,7 +7,6 @@
 --
 --  * Make neotest summary window less prominent
 --  * Make neotest notify on test run (success/failure)
---  * Tune harper to not complain about long sentences
 --  * Make trouble default for quickfix and loclist
 --  * A finished test run shouldn't close the loclist
 --  * Cant close test summary window with q
