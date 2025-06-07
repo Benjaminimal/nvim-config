@@ -5,6 +5,7 @@
 --    | || |_| | |_| | |_| |
 --    |_| \___/|____/ \___/
 --
+--  * Try avante with claude
 --  * Make neotest summary window less prominent
 --  * Make neotest notify on test run (success/failure)
 --  * Make trouble default for quickfix and loclist
