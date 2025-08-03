@@ -8,6 +8,9 @@ end
 
 return {
   "nvim-neotest/neotest",
+  dependencies = {
+    "marilari88/neotest-vitest",
+  },
   opts = {
     adapters = {
       ["neotest-python"] = {
@@ -19,6 +22,7 @@ return {
         },
         -- python = ".venv/bin/python",
       },
+      ["neotest-vitest"] = {},
     },
     status = { virtual_text = false },
   },
