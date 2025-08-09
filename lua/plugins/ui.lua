@@ -25,7 +25,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "catppuccin-macchiato",
+      colorscheme = "edge",
       -- colorscheme = "github_dark_dimmed",
     },
   },
