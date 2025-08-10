@@ -9,24 +9,18 @@ return {
   },
 
   -- add custom colorschemes
+  { "sainnhe/edge" },
   { "sainnhe/sonokai" },
   { "sainnhe/gruvbox-material" },
+  { "sainnhe/everforest" },
   { "projekt0n/github-nvim-theme" },
-  { "olimorris/onedarkpro.nvim" },
-  { "Mofiqul/vscode.nvim" },
-  { "scottmckendry/cyberdream.nvim" },
-  { "briones-gabriel/darcula-solid.nvim" },
-  { "rose-pine/neovim" },
-  { "craftzdog/solarized-osaka.nvim" },
-  { "sainnhe/edge" },
-  { "navarasu/onedark.nvim" },
+  { "rebelot/kanagawa.nvim" },
 
   -- configure LazyVim to load it
   {
     "LazyVim/LazyVim",
     opts = {
       colorscheme = "edge",
-      -- colorscheme = "github_dark_dimmed",
     },
   },
 }
