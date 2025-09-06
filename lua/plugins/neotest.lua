@@ -19,6 +19,7 @@ return {
         args = {
           "-n0",
           "--color=no",
+          "-vv",
         },
         -- python = ".venv/bin/python",
       },
