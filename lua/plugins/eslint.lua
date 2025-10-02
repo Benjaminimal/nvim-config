@@ -11,7 +11,7 @@ return {
             pattern = { "*.tsx", "*.ts", "*.jsx", "*.js" },
             callback = function()
               -- Just run EslintFixAll command directly
-              vim.cmd("EslintFixAll")
+              vim.cmd("LspEslintFixAll")
             end,
           })
         end,
