@@ -13,6 +13,7 @@ return {
   {
     "zbirenbaum/copilot.lua",
     opts = {
+      copilot_model = "claude-sonnet-4.5",
       suggestion = {
         keymap = {
           accept = "<M-CR>",
@@ -31,6 +32,7 @@ return {
     version = "*",
     ---@type CopilotChat.config
     opts = {
+      model = "claude-sonnet-4.5",
       prompts = {
         Reuse = {
           prompt = "Is there a built-in function or library in this language/framework that accomplishes this task?",
