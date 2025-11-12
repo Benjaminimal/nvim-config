@@ -6,6 +6,7 @@
   "bufferline.nvim": { "branch": "main", "commit": "655133c3b4c3e5e05ec549b9f8cc2894ac6f51b3" },
   "catppuccin": { "branch": "main", "commit": "234fc048de931a0e42ebcad675bf6559d75e23df" },
   "cmake-tools.nvim": { "branch": "master", "commit": "87944a5d79b4da7458145d7476d5336557e11911" },
+  "codecompanion.nvim": { "branch": "main", "commit": "47e6e1d24864d2bf8ace8904eff7a41bdf1d3126" },
   "conform.nvim": { "branch": "master", "commit": "cde4da5c1083d3527776fee69536107d98dae6c9" },
   "edge": { "branch": "master", "commit": "4145071bb0ea909511fa9a444eec80367b11296f" },
   "everforest": { "branch": "master", "commit": "484dd560dccb2d2842685c441ad2b54a54ffef1b" },
