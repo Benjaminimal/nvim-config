@@ -16,7 +16,7 @@ return {
       copilot_model = "claude-sonnet-4.5",
       suggestion = {
         keymap = {
-          accept = "<M-CR>",
+          -- accept = "<M-CR>",
           next = "<M-]>",
           prev = "<M-[>",
         },
