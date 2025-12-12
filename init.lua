@@ -5,14 +5,10 @@
 --    | || |_| | |_| | |_| |
 --    |_| \___/|____/ \___/
 --
---  * Try avante with claude
---  * Make neotest summary window less prominent
+--  * Try codecompanion when 18.0 is out
+--    https://github.com/olimorris/codecompanion.nvim/pull/2439
 --  * Make neotest notify on test run (success/failure)
 --  * Make trouble default for quickfix and loclist
---  * A finished test run shouldn't close the loclist
---  * Cant close test summary window with q
---  * don't know how to save files after renaming
---  * sort search (workspace) symbols results by length/match
 --  * in python sometimes comments wont shift indent in visual mode
 --  * yank history on fzf (or similar)
 --  * inline glob for live grep
