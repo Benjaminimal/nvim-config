@@ -32,14 +32,9 @@ return {
     opts = function(_, opts)
       opts.adapters = opts.adapters or {}
       opts.adapters["neotest-python"] = {
-        -- Here you can specify the settings for the adapter, i.e.
-        -- runner = "pytest",
         args = {
-          "-n0",
-          "--color=no",
           "-vv",
         },
-        -- python = ".venv/bin/python",
       }
       return opts
     end,
