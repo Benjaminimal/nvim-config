@@ -1,22 +1,8 @@
 return {
   "nvim-neotest/neotest",
-  dependencies = {
-    "marilari88/neotest-vitest",
-  },
-  opts = {
-    adapters = {
-      ["neotest-python"] = {
-        -- Here you can specify the settings for the adapter, i.e.
-        -- runner = "pytest",
-        args = {
-          "-n0",
-          "--color=no",
-          "-vv",
-        },
-        -- python = ".venv/bin/python",
-      },
-      ["neotest-vitest"] = {},
-    },
-    status = { virtual_text = false },
-  },
+  opts = function(_, opts)
+    opts.status = opts.status or {}
+    -- enabling this would display test results in the gutter and as virtual text
+    opts.status.virtual_text = false
+  end,
 }
