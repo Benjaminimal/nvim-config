@@ -11,8 +11,4 @@ vim.g.editorconfig = true
 -- don't do animations
 vim.g.snacks_animate = false
 
--- LSP Server to use for Python.
--- Set to "basedpyright" to use basedpyright instead of pyright.
-vim.g.lazyvim_python_lsp = "basedpyright"
-
 vim.g.ai_cmp = false
