@@ -12,8 +12,14 @@ return {
       },
     },
     keys = {
-      { "<leader>aj", ":Copilot disable<CR>", desc = "Coptilot - Disable" },
-      { "<leader>ak", ":Copilot enable<CR>", desc = "Coptilot - Enable" },
+      {
+        "<leader>aj",
+        function()
+          require("copilot.suggestion").toggle_auto_trigger()
+          vim.notify("Copilot auto_trigger toggled", vim.log.levels.INFO)
+        end,
+        desc = "Coptilot - Toggle Auto Trigger",
+      },
     },
   },
 }
