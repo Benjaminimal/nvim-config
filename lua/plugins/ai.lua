@@ -22,4 +22,33 @@ return {
       },
     },
   },
+  {
+    "olimorris/codecompanion.nvim",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+    },
+    opts = {
+      interactions = {
+        chat = {
+          variables = {},
+          keymaps = {
+            next_chat = false,
+            previous_chat = false,
+            close = { modes = { n = "q" } },
+            stop = { modes = { n = "<C-x>" } },
+          },
+        },
+      },
+    },
+    keys = {
+      -- Actions picker
+      { "<leader>fa", "<cmd>CodeCompanionActions<cr>", mode = { "n", "v" }, desc = "CodeCompanion Actions" },
+      -- Toggle Chat
+      { "<leader>aa", "<cmd>CodeCompanionChat Toggle<cr>", desc = "Chat Toggle" },
+      -- Paste selection to chat
+      { "<leader>aa", "<cmd>CodeCompanionChat Add<cr>", mode = { "v" }, desc = "Chat Add" },
+      -- Open inline assistant
+      { "<leader>av", ":CodeCompanion ", mode = { "n", "v" }, desc = "Inline Assistant" },
+    },
+  },
 }
