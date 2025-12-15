@@ -14,3 +14,10 @@ vim.api.nvim_create_autocmd("FileType", {
     vim.opt.formatoptions = "jcrqln"
   end,
 })
+
+-- Clear register 's' to avoid unintended macro execution
+vim.api.nvim_create_autocmd("BufEnter", {
+  callback = function()
+    vim.fn.setreg("s", "")
+  end,
+})
