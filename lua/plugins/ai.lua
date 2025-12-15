@@ -4,8 +4,8 @@ return {
     opts = {
       copilot_model = "claude-sonnet-4.5",
       suggestion = {
+        auto_trigger = false,
         keymap = {
-          -- accept = "<M-CR>",
           next = "<M-]>",
           prev = "<M-[>",
         },
