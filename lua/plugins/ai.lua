@@ -34,7 +34,9 @@ return {
           keymaps = {
             next_chat = false,
             previous_chat = false,
-            close = { modes = { n = "q" } },
+            -- This deletes the open chat
+            -- We want "q" to toggle it when open
+            -- close = { modes = { n = "q" } },
             stop = { modes = { n = "<C-x>" } },
           },
         },
