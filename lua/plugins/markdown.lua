@@ -18,6 +18,10 @@ return {
         -- | thin  | when lines are empty overlay the above & below icons |
         -- | hide  | conceal lines unless language name or icon is added  |
         border = "none",
+        -- Icon to add to the right and left of inline code.
+        -- Keeps text from jumping due to hidden '`' character by default.
+        inline_left = "`",
+        inline_right = "`",
       },
     },
   },
