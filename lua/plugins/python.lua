@@ -3,7 +3,7 @@ return {
     "mason-org/mason.nvim",
     opts = function(_, opts)
       vim.list_extend(opts.ensure_installed, {
-        "pyrefly",
+        "ty",
       })
     end,
   },
@@ -16,6 +16,8 @@ return {
         basedpyright = { mason = false, autostart = false },
         -- disable mypy LSP
         mypy = { mason = false, autostart = false },
+        -- enable ty
+        ty = {},
       },
     },
   },
