@@ -26,6 +26,9 @@ return {
     "olimorris/codecompanion.nvim",
     dependencies = {
       "nvim-lua/plenary.nvim",
+      -- Spinners extension
+      "lalitmee/codecompanion-spinners.nvim",
+      "folke/snacks.nvim", -- with snacks for notifications
     },
     opts = {
       interactions = {
@@ -38,6 +41,13 @@ return {
             -- We want "q" to toggle it when open
             -- close = { modes = { n = "q" } },
             stop = { modes = { n = "<C-x>" } },
+          },
+        },
+      },
+      extensions = {
+        spinner = {
+          opts = {
+            style = "snacks",
           },
         },
       },
