@@ -44,6 +44,22 @@ return {
           },
         },
       },
+      rules = {
+        python_testing = {
+          description = "Clean python tests",
+          files = {
+            vim.fn.expand("~/.config/nvim/rules/python/testing.md"),
+          },
+        },
+      },
+      prompt_library = {
+        markdown = {
+          dirs = {
+            vim.fn.getcwd() .. "/.prompts", -- Project lib
+            vim.fn.expand("~/.config/nvim/prompts"), -- Global lib
+          },
+        },
+      },
       extensions = {
         spinner = {
           opts = {
