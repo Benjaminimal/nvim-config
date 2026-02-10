@@ -2,7 +2,6 @@ return {
   {
     "zbirenbaum/copilot.lua",
     opts = {
-      copilot_model = "claude-sonnet-4.5",
       suggestion = {
         auto_trigger = false,
         keymap = {
