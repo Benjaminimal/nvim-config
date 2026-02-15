@@ -143,10 +143,4 @@ return {
       },
     },
   },
-  -- automatic time tracking
-  {
-    "wakatime/vim-wakatime",
-    lazy = false,
-    version = "*",
-  },
 }
